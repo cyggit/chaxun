@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="/static/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/flat-ui.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <style>
+        .login_top{
+            margin-top: 100px ;
+        }
+        .login-screen {
+            min-height: 473px;
+            padding: 123px 199px 33px 306px;
+            background-color: #1abc9c;
+        }
+        .login-form:before {
+                content: "";
+                border-style: solid;
+                border-width: 12px 12px 12px 0;
+                border-color: transparent #eceff1 transparent transparent;
+                height: 0px;
+                position: absolute;
+                left: -12px;
+                top: 60px;
+                width: 0;
+                -webkit-transform: rotate(360deg);
+        }
+        .login_left{
+            left: 200px;
+            width: 96px;
+            position: absolute;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+<div class="container login_top">
+        <div class="login-screen">
+          <div class="login_left">
+{#            <img src="/static/img/login/icon.png" style="width: 120%" alt="Welcome to Mail App"> #}
+              <img src="/static/img/sbm.jpg" style="width: 150%;border-radius: 75px" alt="Welcome to Mail App">
+            <p style="padding-left:30px;text-align: center;font-size: 22px;font-family:Lucida Grande, Verdana, Arial, sans-serif;">请登录</p>
+          </div>
+          <div class="login-form">
+            <div class="form-group">
+              <input type="text" class="form-control login-field" value="" placeholder="用户名" id="login-name">
+              <label class="login-field-icon fui-user" for="login-name"></label>
+            </div>
+
+            <div class="form-group">
+              <input type="password" class="form-control login-field" value="" placeholder="密码" id="login-pass">
+              <label class="login-field-icon fui-lock" for="login-pass"></label>
+            </div>
+
+            <a class="btn btn-primary btn-lg btn-block" href="#">登 录</a>
+              <p></p>
+{#            <a class="login-link" href="#">Lost your password?</a>#}
+          </div>
+        </div>
+</div>
+
+<script src="/static/js/vendor/jquery.min.js"></script>
+<script src="/static/js/flat-ui.min.js"></script>
+</body>
+</html>
