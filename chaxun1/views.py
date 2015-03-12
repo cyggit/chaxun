@@ -1,4 +1,5 @@
 from django.shortcuts import render,render_to_response
+from django.http import HttpResponseRedirect
 import datetime
 from chaxun.settings import  BASE_DIR
 
@@ -12,4 +13,4 @@ def current_time(request):
     return render_to_response('login.html',{'current_date':now})
 
 def test(request):
-    return  render_to_response('login.html')
+    return  HttpResponseRedirect('/index/')

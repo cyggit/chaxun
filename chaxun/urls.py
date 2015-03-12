@@ -1,7 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from chaxun1.views import index
-from test1.views import display_meta
+from chaxun1.views import index,test
 
 urlpatterns = patterns('',
     # Examples:
@@ -10,5 +9,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^index/$',index),
-    url(r'^display/$',display_meta),
+    url(r'^test/$',test)
 )
